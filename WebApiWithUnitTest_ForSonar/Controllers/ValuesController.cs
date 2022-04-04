@@ -14,7 +14,7 @@ namespace WebApiWithUnitTest_ForSonar.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return Ok(new string[] { "value1", "value2" });
+            return new string[] { "value1", "value2" };
         }
 
         // GET api/values/5
