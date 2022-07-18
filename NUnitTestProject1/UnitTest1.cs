@@ -16,11 +16,11 @@ namespace Tests
         public void Test1()
         {
             var controller = new ValuesController();
-            //var result = controller.Get().Result as OkObjectResult;
+            var result = controller.Get().Result as OkObjectResult;
             //var a = result.Value;
             
-            //Assert.IsTrue(((string[])result.Value).Length > 0);
-            Assert.Pass();
+            Assert.IsTrue(((string[])result.Value).Length > 0);
+            //Assert.Pass();
         }
     }
 }
